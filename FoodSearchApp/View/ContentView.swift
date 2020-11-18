@@ -34,7 +34,7 @@ struct ContentView: View {
                              }
                 NavigationLink(destination: RecipeView(Query: $input.Query), isActive: $isReadyToNextView) {EmptyView()}
                 
-                Button("        Recipes       "){
+                Button("       See Recipes       "){
                     convert(arrayList: usedWords)
                     input.Query = properQuery
                     

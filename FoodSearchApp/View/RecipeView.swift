@@ -27,7 +27,7 @@ struct RecipeView: View {
                     }
                 }
             }
-            .navigationBarTitle("Tour Location")
+            //.navigationBarTitle("Tour Location")
 
         }
         .onAppear {

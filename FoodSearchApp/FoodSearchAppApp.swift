@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct FoodSearchAppApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

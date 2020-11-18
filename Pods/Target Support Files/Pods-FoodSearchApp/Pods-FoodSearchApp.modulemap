@@ -1,0 +1,6 @@
+framework module Pods_FoodSearchApp {
+  umbrella header "Pods-FoodSearchApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

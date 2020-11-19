@@ -55,6 +55,8 @@ struct ContentView: View {
                 
                     
                 HStack{
+                    Image(systemName: "plus.magnifyingglass")
+                    .foregroundColor(Color(UIColor.lightGray))
                     TextField("Enter your ingredients", text: $ingredient, onCommit: addNewWord)
                         .foregroundColor(Color(UIColor.black))
                         .onTapGesture {
@@ -80,6 +82,13 @@ struct ContentView: View {
                 .padding(10)
                 .background(Color.white)
                 .cornerRadius(5)
+                HStack{
+                    
+                    Text("  Today's Popular Recipes").foregroundColor(.orange)
+                    Spacer()
+                   
+                }
+                
                 
                 ScrollView(.horizontal) {
                     HStack(spacing: 20) {

@@ -13,7 +13,6 @@ struct RecipeView: View {
     @ObservedObject var recipeAPI = RecipeAPI()
     
     var body: some View {
-       Text("\(Query)")
         NavigationView {
 
             List(recipeAPI.recipes) { post in

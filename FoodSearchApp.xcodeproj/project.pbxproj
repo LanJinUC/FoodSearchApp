@@ -17,6 +17,8 @@
 		21D93F6C2564BF73007C48E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D93F6B2564BF73007C48E1 /* Assets.xcassets */; };
 		21D93F6F2564BF73007C48E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D93F6E2564BF73007C48E1 /* Preview Assets.xcassets */; };
 		21D93F782564C057007C48E1 /* recipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D93F772564C057007C48E1 /* recipeAPI.swift */; };
+		33696B7B256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */; };
+		33C2AB4A2567175900A773A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C2AB492567175900A773A0 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		21D93F702564BF73007C48E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21D93F772564C057007C48E1 /* recipeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeAPI.swift; sourceTree = "<group>"; };
 		2BA5690792E29851399F40A6 /* Pods-FoodSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodSearchApp/Pods-FoodSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MyImageClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		33C2AB492567175900A773A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9F9BAACCBA9A7F7A1DD11C8E /* Pods-FoodSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSearchApp.release.xcconfig"; path = "Target Support Files/Pods-FoodSearchApp/Pods-FoodSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		E76836DD9BB39A5C58B3D7B7 /* Pods_FoodSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,9 +96,11 @@
 				21D93F672564BF72007C48E1 /* FoodSearchAppApp.swift */,
 				21D93F772564C057007C48E1 /* recipeAPI.swift */,
 				21D93F6B2564BF73007C48E1 /* Assets.xcassets */,
+				33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */,
 				21D93F702564BF73007C48E1 /* Info.plist */,
 				21B8FFDF25653D9100754216 /* test.json */,
 				21D93F6D2564BF73007C48E1 /* Preview Content */,
+				33C2AB492567175900A773A0 /* Launch Screen.storyboard */,
 			);
 			path = FoodSearchApp;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			files = (
 				21D93F6F2564BF73007C48E1 /* Preview Assets.xcassets in Resources */,
 				21D93F6C2564BF73007C48E1 /* Assets.xcassets in Resources */,
+				33C2AB4A2567175900A773A0 /* Launch Screen.storyboard in Resources */,
 				21B8FFE025653D9100754216 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B8FFC3256502C900754216 /* AppView.swift in Sources */,
+				33696B7B256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel in Sources */,
 				21B8FFE42565428D00754216 /* Recipes.swift in Sources */,
 				21D93F782564C057007C48E1 /* recipeAPI.swift in Sources */,
 				21D93F6A2564BF72007C48E1 /* ContentView.swift in Sources */,
@@ -374,7 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSearchApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YZF987JXA4;
+				DEVELOPMENT_TEAM = 8293PG22JQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FoodSearchApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -382,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.lanjin.FoodSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.FoodSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,7 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSearchApp/Preview Content\"";
-				DEVELOPMENT_TEAM = YZF987JXA4;
+				DEVELOPMENT_TEAM = 8293PG22JQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FoodSearchApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -405,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.lanjin.FoodSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.FoodSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

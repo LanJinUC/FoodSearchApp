@@ -18,6 +18,8 @@
 		21D93F6F2564BF73007C48E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D93F6E2564BF73007C48E1 /* Preview Assets.xcassets */; };
 		21D93F782564C057007C48E1 /* recipeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D93F772564C057007C48E1 /* recipeAPI.swift */; };
 		33696B7B256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */; };
+		33696B93257759EE001DDDB5 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33696B92257759EE001DDDB5 /* ShoppingListView.swift */; };
+		33696B9E257807A7001DDDB5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33696B9D257807A7001DDDB5 /* DataStore.swift */; };
 		33C2AB4A2567175900A773A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C2AB492567175900A773A0 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +28,7 @@
 		21B8FFDC2565205200754216 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		21B8FFDF25653D9100754216 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		21B8FFE32565428D00754216 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
-		21D93F642564BF72007C48E1 /* FoodSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D93F642564BF72007C48E1 /* Recipe Garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Garage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D93F672564BF72007C48E1 /* FoodSearchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchAppApp.swift; sourceTree = "<group>"; };
 		21D93F692564BF72007C48E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21D93F6B2564BF73007C48E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		21D93F772564C057007C48E1 /* recipeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeAPI.swift; sourceTree = "<group>"; };
 		2BA5690792E29851399F40A6 /* Pods-FoodSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-FoodSearchApp/Pods-FoodSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MyImageClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		33696B92257759EE001DDDB5 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		33696B9D257807A7001DDDB5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		33C2AB492567175900A773A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9F9BAACCBA9A7F7A1DD11C8E /* Pods-FoodSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSearchApp.release.xcconfig"; path = "Target Support Files/Pods-FoodSearchApp/Pods-FoodSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		E76836DD9BB39A5C58B3D7B7 /* Pods_FoodSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,7 @@
 				21D93F692564BF72007C48E1 /* ContentView.swift */,
 				21B8FFC2256502C900754216 /* AppView.swift */,
 				21B8FFDC2565205200754216 /* RecipeView.swift */,
+				33696B92257759EE001DDDB5 /* ShoppingListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,7 +78,8 @@
 		21D93F5B2564BF71007C48E1 = {
 			isa = PBXGroup;
 			children = (
-				21D93F662564BF72007C48E1 /* FoodSearchApp */,
+				33696B9D257807A7001DDDB5 /* DataStore.swift */,
+				21D93F662564BF72007C48E1 /* Recipe Garage */,
 				21D93F652564BF72007C48E1 /* Products */,
 				64100C199DBBBD6708088130 /* Pods */,
 				A23A26EAB2A7BA1B36FEFCAA /* Frameworks */,
@@ -83,12 +89,12 @@
 		21D93F652564BF72007C48E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21D93F642564BF72007C48E1 /* FoodSearchApp.app */,
+				21D93F642564BF72007C48E1 /* Recipe Garage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21D93F662564BF72007C48E1 /* FoodSearchApp */ = {
+		21D93F662564BF72007C48E1 /* Recipe Garage */ = {
 			isa = PBXGroup;
 			children = (
 				21B8FFE22565427A00754216 /* Model */,
@@ -102,7 +108,7 @@
 				21D93F6D2564BF73007C48E1 /* Preview Content */,
 				33C2AB492567175900A773A0 /* Launch Screen.storyboard */,
 			);
-			path = FoodSearchApp;
+			path = "Recipe Garage";
 			sourceTree = "<group>";
 		};
 		21D93F6D2564BF73007C48E1 /* Preview Content */ = {
@@ -133,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21D93F632564BF72007C48E1 /* FoodSearchApp */ = {
+		21D93F632564BF72007C48E1 /* Recipe Garage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21D93F732564BF73007C48E1 /* Build configuration list for PBXNativeTarget "FoodSearchApp" */;
+			buildConfigurationList = 21D93F732564BF73007C48E1 /* Build configuration list for PBXNativeTarget "Recipe Garage" */;
 			buildPhases = (
 				2A387CA026223BE3F5B08D0D /* [CP] Check Pods Manifest.lock */,
 				21D93F602564BF72007C48E1 /* Sources */,
@@ -147,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = FoodSearchApp;
+			name = "Recipe Garage";
 			productName = FoodSearchApp;
-			productReference = 21D93F642564BF72007C48E1 /* FoodSearchApp.app */;
+			productReference = 21D93F642564BF72007C48E1 /* Recipe Garage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 21D93F5F2564BF71007C48E1 /* Build configuration list for PBXProject "FoodSearchApp" */;
+			buildConfigurationList = 21D93F5F2564BF71007C48E1 /* Build configuration list for PBXProject "Recipe Garage" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -179,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21D93F632564BF72007C48E1 /* FoodSearchApp */,
+				21D93F632564BF72007C48E1 /* Recipe Garage */,
 			);
 		};
 /* End PBXProject section */
@@ -245,12 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33696B93257759EE001DDDB5 /* ShoppingListView.swift in Sources */,
 				21B8FFC3256502C900754216 /* AppView.swift in Sources */,
 				33696B7B256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel in Sources */,
 				21B8FFE42565428D00754216 /* Recipes.swift in Sources */,
 				21D93F782564C057007C48E1 /* recipeAPI.swift in Sources */,
 				21D93F6A2564BF72007C48E1 /* ContentView.swift in Sources */,
 				21D93F682564BF72007C48E1 /* FoodSearchAppApp.swift in Sources */,
+				33696B9E257807A7001DDDB5 /* DataStore.swift in Sources */,
 				21B8FFDD2565205200754216 /* RecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodSearchApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Recipe Garage/Preview Content\"";
 				DEVELOPMENT_TEAM = 8293PG22JQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoodSearchApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Recipe Garage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,10 +412,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodSearchApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Recipe Garage/Preview Content\"";
 				DEVELOPMENT_TEAM = 8293PG22JQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoodSearchApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Recipe Garage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -423,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21D93F5F2564BF71007C48E1 /* Build configuration list for PBXProject "FoodSearchApp" */ = {
+		21D93F5F2564BF71007C48E1 /* Build configuration list for PBXProject "Recipe Garage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21D93F712564BF73007C48E1 /* Debug */,
@@ -432,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21D93F732564BF73007C48E1 /* Build configuration list for PBXNativeTarget "FoodSearchApp" */ = {
+		21D93F732564BF73007C48E1 /* Build configuration list for PBXNativeTarget "Recipe Garage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21D93F742564BF73007C48E1 /* Debug */,

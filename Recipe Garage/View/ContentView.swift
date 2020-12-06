@@ -11,7 +11,11 @@ import UIKit
 import CoreML
 import Vision
 
-
+struct Category: Identifiable {
+    var id = UUID()
+    var image: String
+    var name: String
+}
 
 class UserInput : ObservableObject{
     @Published var Query: String = ""
@@ -55,6 +59,8 @@ struct ContentView: View {
         //UITableView.appearance().separatorStyle = .none
         
     }
+    
+    let categories: [Category] = [Category(image: "property1", name: "Meat Balls"), Category(image: "property2", name: "Garlic Tuscan"), Category(image: "property3", name: "Soup"), Category(image: "property4", name: "Easy Chicken")]
 
     
     var body: some View {
@@ -83,7 +89,26 @@ struct ContentView: View {
                         if isEditing {}
                     //}
                     
-                    
+                        HStack{
+                            
+                            Text("  Today's Popular Recipes")
+                                .foregroundColor(.orange)
+                                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+                            
+                            
+                            Spacer()
+                           
+                        }
+                
+                
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 20) {
+                                ForEach(self.categories) { item in
+                                    CategoriesView(item: item)
+                                }
+                            }
+                            .padding(.bottom, 20)
+                        }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
                     
                     List {
                         ForEach(usedWords, id: \.self)
@@ -283,6 +308,26 @@ struct WebViewPage : UIViewRepresentable {
     }
 }
 
+struct CategoriesView: View {
+    var item: Category
+    var body: some View {
+        VStack(spacing: 0) {
+            Image(item.image)
+                .resizable()
+                .frame(width: 130, height: 90)
+            Text(item.name)
+                .font(.custom("Helvetica Neue", size: 15))
+                .foregroundColor(Color.black.opacity(0.9))
+                .fontWeight(.regular)
+                .padding(.all, 12)
+        }
+        .background(Color.white)
+        .cornerRadius(4.0)
+        .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 0)
+        .padding(.leading, 2)
+    }
+}
+
 struct Imagepicker : UIViewControllerRepresentable {
     
     func makeCoordinator() -> Imagepicker.Coordinator {
@@ -330,5 +375,6 @@ struct Imagepicker : UIViewControllerRepresentable {
             
         }
     }
+    
 }
 

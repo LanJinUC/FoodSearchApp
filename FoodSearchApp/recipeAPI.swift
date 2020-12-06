@@ -46,9 +46,9 @@ class RecipeAPI: ObservableObject{
         
         
         //for test
-        //let pathToJsonFile = Bundle.main.path(forResource: "test", ofType: "json")!
-        //let data = NSData(contentsOfFile: pathToJsonFile)!
-      
+//        let pathToJsonFile = Bundle.main.path(forResource: "test", ofType: "json")!
+//        let data = NSData(contentsOfFile: pathToJsonFile)!
+//
 //            do{
 //                let json = try JSON(data: data as Data)
 //                print("yeah?")

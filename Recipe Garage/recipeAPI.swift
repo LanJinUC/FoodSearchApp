@@ -54,6 +54,12 @@ class RecipeAPI: ObservableObject{
             }catch{
                 print("Invalid selection")
             }
+
+        }
+        
+        
+
+
         
         
        
@@ -68,4 +74,4 @@ class RecipeAPI: ObservableObject{
     
     
     
-}
+

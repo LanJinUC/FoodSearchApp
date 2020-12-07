@@ -390,7 +390,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Recipe Garage/Preview Content\"";
-				DEVELOPMENT_TEAM = 8293PG22JQ;
+				DEVELOPMENT_TEAM = YZF987JXA4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Recipe Garage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -398,7 +398,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.FoodSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.lanjin.FoodSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Recipe Garage/Preview Content\"";
-				DEVELOPMENT_TEAM = 8293PG22JQ;
+				DEVELOPMENT_TEAM = YZF987JXA4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Recipe Garage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -421,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.FoodSearchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PYJY.lanjin.FoodSearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

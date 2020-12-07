@@ -12,31 +12,14 @@ class RecipeAPI: ObservableObject{
         let apiKey = "&app_key=0800f71dbb3c9bc1707ccf5abb12a083"
         
         
-        AF.request("http\(apiURL)\(ingredients)\(apiId)\(apiKey)").responseJSON{ response in
+        AF.request("\(apiURL)\(ingredients)\(apiId)\(apiKey)").responseJSON{ response in
             switch response.result{
             
             case.success(let value):
                 
                 let json = JSON(value)
-                //print(json)
-                
-            case.failure(let error):
-               // print(error)
-            print("Just for test")
-            
-            }
-        }
-        
-        
-        //for test
-        let pathToJsonFile = Bundle.main.path(forResource: "test", ofType: "json")!
-        let data = NSData(contentsOfFile: pathToJsonFile)!
-      
-            do{
-                let json = try JSON(data: data as Data)
-                print("yeah?")
-               // print(json)
-                
+                //print web response
+                print(json)
                 for (index,subJson):(String, JSON) in json["hits"]{
                     let label = subJson["recipe"]["label"].stringValue
                     let image = subJson["recipe"]["image"].stringValue
@@ -46,14 +29,43 @@ class RecipeAPI: ObservableObject{
                     //print(subJson["recipe"]["ingredientLines"])
                    // let recipy = Recipes(label: label, url: url, image: image, ingredientLines: ingredientLines)
                     let recip = Recipes(label: label, url: url, image: image, ingredientLines: ingredientLines)
-                    recipes.append(recip)
+                    self.recipes.append(recip)
                 }
-                   
                 
-                
-            }catch{
-                print("Invalid selection")
+            case.failure(let error):
+               print(error)
+            
+            
             }
+        }
+        
+        
+        //for test
+//        let pathToJsonFile = Bundle.main.path(forResource: "test", ofType: "json")!
+//        let data = NSData(contentsOfFile: pathToJsonFile)!
+//
+//            do{
+//                let json = try JSON(data: data as Data)
+//                print("yeah?")
+//               // print(json)
+//
+//                for (index,subJson):(String, JSON) in json["hits"]{
+//                    let label = subJson["recipe"]["label"].stringValue
+//                    let image = subJson["recipe"]["image"].stringValue
+//                    let url = subJson["recipe"]["url"].stringValue
+//                    let ingredientLines = subJson["recipe"]["ingredientLines"].arrayValue.map {
+//                        $0.stringValue}
+//                    //print(subJson["recipe"]["ingredientLines"])
+//                   // let recipy = Recipes(label: label, url: url, image: image, ingredientLines: ingredientLines)
+//                    let recip = Recipes(label: label, url: url, image: image, ingredientLines: ingredientLines)
+//                    recipes.append(recip)
+//                }
+//
+//
+//
+//            }catch{
+//                print("Invalid selection")
+//            }
 
         }
         

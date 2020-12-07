@@ -15,6 +15,7 @@ struct Category: Identifiable {
     var id = UUID()
     var image: String
     var name: String
+    var url: String
 }
 
 class UserInput : ObservableObject{
@@ -60,17 +61,14 @@ struct ContentView: View {
         
     }
     
-    let categories: [Category] = [Category(image: "property1", name: "Meat Balls"), Category(image: "property2", name: "Garlic Tuscan"), Category(image: "property3", name: "Soup"), Category(image: "property4", name: "Easy Chicken")]
+    let categories: [Category] = [Category(image: "property1", name: "Meat Balls", url: "https://www.cookingclassy.com/meatball-recipe/"), Category(image: "property2", name: "Garlic Tuscan", url: "https://www.cookingclassy.com/roasted-garlic-mashed-cauliflower/") , Category(image: "property3", name: "Soup", url: "https://www.cookingclassy.com/tortellini-soup/"), Category(image: "property4", name: "Easy Chicken",url: "https://www.cookingclassy.com/chicken-fajitas/")]
 
     
     var body: some View {
         NavigationView{
             
             VStack{
-                Text("Welcome to Recipe Garage").font(.title)
-                    .foregroundColor(.orange)
-                    .padding(.top, 20.0)
-                    .onAppear {self.recipeAPI.fetchData(ingredients: "")}
+              
                 
                 NavigationLink(destination: RecipeView(Query: $input.Query), isActive: $isReadyToNextView) {EmptyView()}
                 
@@ -101,14 +99,46 @@ struct ContentView: View {
                         }
                 
                 
-                        ScrollView(.horizontal) {
-                            HStack(spacing: 20) {
-                                ForEach(self.categories) { item in
-                                    CategoriesView(item: item)
+//                        ScrollView(.horizontal) {
+//                            HStack(spacing: 20) {
+//
+//                                ForEach(self.categories) { item in
+//                                    CategoriesView(item: item)
+//                                }
+//
+//                            }
+//                            .padding(.bottom, 20)
+//                        }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+                
+            
+                    
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 20) {
+
+                            ForEach(self.categories) { item in
+                                NavigationLink(destination: DetailView(url: item.url)) {
+                                    VStack(spacing: 0) {
+                                        Image(item.image)
+                                            .resizable()
+                                            .frame(width: 130, height: 90)
+                                        Text(item.name)
+                                            .font(.custom("Helvetica Neue", size: 15))
+                                            .foregroundColor(Color.black.opacity(0.9))
+                                            .fontWeight(.regular)
+                                            .padding(.all, 12)
+                                    }
+                                    .background(Color.white)
+                                    .cornerRadius(4.0)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 0)
+                                    .padding(.leading, 2)
                                 }
                             }
-                            .padding(.bottom, 20)
-                        }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+
+                        }
+                        .padding(.bottom, 20)
+                    }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+                
+                
                     
                     List {
                         ForEach(usedWords, id: \.self)

@@ -70,6 +70,7 @@
 		21B8FFE22565427A00754216 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33696B9D257807A7001DDDB5 /* DataStore.swift */,
 				21B8FFE32565428D00754216 /* Recipes.swift */,
 			);
 			path = Model;
@@ -78,7 +79,6 @@
 		21D93F5B2564BF71007C48E1 = {
 			isa = PBXGroup;
 			children = (
-				33696B9D257807A7001DDDB5 /* DataStore.swift */,
 				21D93F662564BF72007C48E1 /* Recipe Garage */,
 				21D93F652564BF72007C48E1 /* Products */,
 				64100C199DBBBD6708088130 /* Pods */,
@@ -101,12 +101,12 @@
 				21B8FFBE2565007A00754216 /* View */,
 				21D93F672564BF72007C48E1 /* FoodSearchAppApp.swift */,
 				21D93F772564C057007C48E1 /* recipeAPI.swift */,
-				21D93F6B2564BF73007C48E1 /* Assets.xcassets */,
 				33696B7A256E51B7001DDDB5 /* MyImageClassifier 1.mlmodel */,
 				21D93F702564BF73007C48E1 /* Info.plist */,
 				21B8FFDF25653D9100754216 /* test.json */,
 				21D93F6D2564BF73007C48E1 /* Preview Content */,
 				33C2AB492567175900A773A0 /* Launch Screen.storyboard */,
+				21D93F6B2564BF73007C48E1 /* Assets.xcassets */,
 			);
 			path = "Recipe Garage";
 			sourceTree = "<group>";

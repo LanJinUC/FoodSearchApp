@@ -13,9 +13,8 @@ struct RecipeView: View {
     @ObservedObject var recipeAPI = RecipeAPI()
     
     var body: some View {
-       Text("\(Query)").padding(.top, 50.0)
         
-        NavigationView {
+            Text("Here are the recipes contain \(Query)") .foregroundColor(.orange)
 
             List(recipeAPI.recipes) { post in
                 NavigationLink(destination: DetailView(url: post.url)) {
@@ -27,13 +26,12 @@ struct RecipeView: View {
                         Text(post.label).font(.system(size: 12.0))
                     }
                 }
-            }
+            } .onAppear {
+                self.recipeAPI.fetchData(ingredients: Query)
             //.navigationBarTitle("Tour Location")
 
         }
-        .onAppear {
-            self.recipeAPI.fetchData(ingredients: Query)
-        }
+       
     }
 }
 

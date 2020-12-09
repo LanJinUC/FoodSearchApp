@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="Recipe Garage/Assets.xcassets/logo.imageset/logo.png">
+  <a href="https://github.com/LanJinUC/FoodSearchApp/blob/main/Recipe%20Garage/Assets.xcassets/logo.imageset/logo.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 

@@ -314,7 +314,7 @@ struct ContentView: View {
     }
     
     func convert(arrayList: [String]){
-        properQuery = arrayList.joined(separator: " + ")
+        properQuery = arrayList.joined(separator: "+")
     }
         
 }
